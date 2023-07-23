@@ -1,0 +1,1 @@
+# Rosetta.Siegfried-FormatIdentificationPlugin
