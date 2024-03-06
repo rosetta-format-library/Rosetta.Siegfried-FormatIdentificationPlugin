@@ -24,6 +24,6 @@ To use a different Siegfried executable version:
 4. Build the plugin
 5. Add the plugin to the server and restart the server.
 ## Note
-This is the SiegfriedIdentificationPlugin.jar provided with Rosetta 8.0
+This is the SiegfriedIdentificationPlugin.jar provided with Rosetta 8.1
 > This won't work on previous Rosetta versions (7.4.0+)
 > To use with previous Rosetta version (7.4.0+), use compatible Siegfried signature with the Siegfried executable on the server as explained above
