@@ -11,7 +11,7 @@
 </fr:x_form>
 </pl:initParameters>
   <pl:description>Siegfried is a PRONOM signature-based file format identification tool</pl:description>
-  <pl:version>2.0</pl:version>
+  <pl:version>3.0</pl:version>
   <pl:materialType>DIGITAL</pl:materialType>
   <pl:module>Repository</pl:module>
   <pl:generalType>TASK</pl:generalType>

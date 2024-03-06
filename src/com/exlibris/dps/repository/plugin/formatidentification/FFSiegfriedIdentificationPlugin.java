@@ -62,6 +62,18 @@ public class FFSiegfriedIdentificationPlugin implements
 		if(isLinuxOS()) {
 			//Use Signature of v106, same as FFDROID as of now.
 	        Path targetDirectory = Paths.get("/exlibris/dps/siegfried/default.sig");
+	        if(!Files.exists(targetDirectory)) {
+	        	log.warn("sf -update most likely failed");
+	        	log.warn("creating /siegfried directory in /exlibris/dps");
+	        	try {
+					Files.createDirectories(Paths.get("/exlibris/dps/siegfried"));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+		        	log.error("Unable to create /siegfried directory in /exlibris/dps");
+					e.printStackTrace();
+				}
+	        	
+	        }
 			InputStream link = (FFSiegfriedIdentificationPlugin.class
 					.getResourceAsStream("/conf/default.sig"));
 			try {

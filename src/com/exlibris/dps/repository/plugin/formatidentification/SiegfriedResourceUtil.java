@@ -92,7 +92,9 @@ public class SiegfriedResourceUtil {
 			SiegfriedInfo.File fileInfo) {
 		if (fileInfo.getMatches().size() == 1) {
 			if (fileInfo.getMatches().get(0).getBasis()
-					.contains("container match")) {
+					.contains("container match")
+					|| fileInfo.getMatches().get(0).getBasis()
+					.contains("container name")) {
 				return FormatIdentificationMethod.CONTAINER;
 			} else if (fileInfo.getMatches().get(0).getBasis()
 					.contains("byte match")) {
@@ -110,8 +112,8 @@ public class SiegfriedResourceUtil {
 	
 	public FormatIdentificationMethod parseIdentificationMethodMatch(
 			SiegfriedInfo.Match match) {
-			if (match.getBasis()
-					.contains("container match")) {
+		if (match.getBasis().contains("container match")
+				|| match.getBasis().contains("container name")) {
 				return FormatIdentificationMethod.CONTAINER;
 			} else if (match.getBasis()
 					.contains("byte match")) {
