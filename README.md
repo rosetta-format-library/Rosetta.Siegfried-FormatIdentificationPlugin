@@ -18,8 +18,11 @@ To update the signature file:
 ## Siegfried tool update
 Siegfried tool is provided OOTB 
 To use a different Siegfried executable version:
-1.  Install the Siegfried executable to the server
+1.  Install the Siegfried executable to Rosetta server (anywhere)
 2.  Change the soft link sf to point to the new executable
+>*	cd /exlibris/dps/d4_1/product/bin
+>*	rm sf
+>*	ln -s <location of the executable installed in step #1> sf
 3.  Update the signature file default.sig under conf directory.
 4. Build the plugin
 5. Add the plugin to the server and restart the server.
